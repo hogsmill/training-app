@@ -1,7 +1,6 @@
 #!/bin/bash
 
 FORCE=false
-NEW=false
 while [ $1 ]
 do
   echo $1
@@ -13,7 +12,7 @@ done
 
 BASEPORT=4650
 REPO="https://github.com/hogsmill/training-app.git"
-MAINAPP="trainingApp"
+MAINAPP="training-app"
 MAINCOLLECTION="trainingApp"
 MAINPEOPLECOLLECTION="trainingAppPeople"
 MAINNAME="Training App"
