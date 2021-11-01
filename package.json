@@ -20,7 +20,7 @@
     "monodb": "^1.5.1",
     "portfinder": "^1.0.28",
     "qrcode": "^1.4.4",
-    "sass": "^1.43.3",
+    "sass": "^1.43.4",
     "socket.io": "^4.3.1",
     "socket.io-client": "^4.3.2",
     "ssri": "^8.0.1",
