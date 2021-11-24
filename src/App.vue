@@ -6,15 +6,7 @@
     <div v-if="localStorageStatus != 'ok'" class="not-connected">
       WARNING: {{ localStorageStatus }} - please enable cookies in browser settings
     </div>
-    <h1>App Testbed</h1>
-    <div class="buttons">
-      <i class="fas fa-envelope-open-text" :class="{'selected': tab == 'messaging'}" @click="setTab('messaging')" title="Message/socket testing" />
-      <i class="fas fa-chart-line" :class="{'selected': tab == 'graph'}" @click="setTab('graph')" title="Graph testing" />
-      <i class="fas fa-qrcode" :class="{'selected': tab == 'qrcode'}" @click="setTab('qrcode')" title="QR Code testing" />
-    </div>
-    <Messaging v-if="tab == 'messaging'" />
-    <Graph v-if="tab == 'graph'" />
-    <QrCode v-if="tab == 'qrcode'" />
+    <h1>Training App</h1>
   </div>
 </template>
 
@@ -22,10 +14,6 @@
 import bus from './socket.js'
 
 import ls from './lib/localStorage.js'
-
-import Messaging from './components/Messaging.vue'
-import Graph from './components/Graph.vue'
-import QrCode from './components/QrCode.vue'
 
 export default {
   name: 'App',
@@ -60,9 +48,6 @@ export default {
     })
   },
   methods: {
-    setTab(tab) {
-      this.tab = tab
-    }
   }
 }
 </script>
@@ -79,21 +64,5 @@ export default {
     font-weight: bold;
     margin: 6px;
   }
-
-  .buttons {
-    margin-bottom: 24px;
-
-    .fas {
-      padding: 6px;
-      margin: 6px;
-      border: 1px solid;
-      border-radius: 6px;
-      color: #f4511e;
-
-      &.selected {
-        color: #fff;
-        background-color: #f4511e;
-      }
-    }
-  }
+  
 </style>
