@@ -18,9 +18,6 @@ import ls from './lib/localStorage.js'
 export default {
   name: 'App',
   components: {
-    Messaging,
-    Graph,
-    QrCode
   },
   data() {
     return {
@@ -64,5 +61,5 @@ export default {
     font-weight: bold;
     margin: 6px;
   }
-  
+
 </style>
