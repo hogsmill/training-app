@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "chart.js": "^2.9.4",
-    "core-js": "^3.19.1",
+    "core-js": "^3.19.2",
     "cors": "^2.8.5",
     "death": "^1.1.0",
     "dotenv": "^10.0.0",
@@ -18,7 +18,7 @@
     "mongodb": "^4.2.0",
     "monodb": "^1.5.1",
     "portfinder": "^1.0.28",
-    "sass": "^1.43.4",
+    "sass": "^1.44.0",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.0",
     "ssri": "^8.0.1",
